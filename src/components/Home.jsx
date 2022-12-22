@@ -1,32 +1,30 @@
 import React from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import Topic from "./Topic";
-
+import banner from "../assets/Banner.jpg";
 const Home = () => {
   const { data } = useLoaderData();
   // console.log(data);
   return (
     <section>
-      <div className=" container flex justify-center items-center  ">
-        <div className="text-center w-1/2">
-          <img
-            src="https://thumbs.dreamstime.com/b/girl-standing-book-holding-quiz-placard-smart-school-hand-inviting-to-play-young-reader-erudite-ready-to-answer-82348976.jpg"
-            alt=""
-          />
-        </div>
-
-        <div className="text-center w-1/2 mr-12">
-          <div className="  text-center lg:pb-56 md:py-32 lg:px-70 flex flex-col  text-gray-900">
-            <h1 className="text-3xl font-bold text-gray-800">
-              Welcome To Hero Quiz
-            </h1>
-            <p className="mt-6 text-lg  text-gray-900">
-              Quizzes encourage pupils' self awareness of progress and self
-              assessment. By taking quizzes, pupils get instant feedback on
-              their responses. And this can help them identify areas they need
-              to develop themselves and highlight progress for them to be proud
-              of.
+      <div
+        className="hero min-h-screen"
+        style={{ backgroundImage: `url(${banner})` }}
+      >
+        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-content text-center text-neutral-content">
+          <div className="max-w-md">
+            <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+            <p className="mb-5">
+              A quiz refers to a short test of knowledge, typically around 10
+              questions in length, with question formats often including
+              multiple choice, fill in the blanks, true or false and short
+              answer.
             </p>
+            <Link to="/topics">
+              {" "}
+              <button className="btn btn-primary">Let's Start</button>
+            </Link>
           </div>
         </div>
       </div>

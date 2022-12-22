@@ -13,7 +13,7 @@ const Statistics = () => {
   const { data } = useLoaderData();
   console.log(data);
   return (
-    <div className="chart">
+    <div className="chart  mb-56 mt-32">
       <ResponsiveContainer width="95%" height={300}>
         <LineChart width={1000} height={300} data={data}>
           <XAxis dataKey="name" />

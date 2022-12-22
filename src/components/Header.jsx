@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-red-100">
+    <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  bg-gray-600 text-white">
       <div className="relative flex items-center justify-between">
         <Link
           to="/"
@@ -12,7 +12,7 @@ const Header = () => {
           title="Smart Home"
           className="inline-flex items-center"
         >
-          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+          <span className="ml-2 text-xl font-bold tracking-wide  uppercase">
             Hero Quiz
           </span>
         </Link>
@@ -22,7 +22,7 @@ const Header = () => {
               to="/home"
               aria-label="Home"
               title="Home"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide  transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
               Home
             </Link>
@@ -32,7 +32,7 @@ const Header = () => {
               to="/topics"
               aria-label="Topics"
               title="Topics"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide  transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
               Topics
             </Link>
@@ -43,20 +43,9 @@ const Header = () => {
               to="/statistics"
               aria-label="Statistics"
               title="Statistics"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide  transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
               Statistics
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              to="/blog"
-              aria-label="Blog"
-              title="Blog"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-            >
-              Blog
             </Link>
           </li>
         </ul>
@@ -67,7 +56,7 @@ const Header = () => {
             className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
             onClick={() => setIsMenuOpen(true)}
           >
-            <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
+            <svg className="w-5 text-white" viewBox="0 0 24 24">
               <path
                 fill="currentColor"
                 d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
